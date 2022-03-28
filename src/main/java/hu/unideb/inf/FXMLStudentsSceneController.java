@@ -19,9 +19,12 @@ public class FXMLStudentsSceneController {
 
     @FXML
     void handleLoadButtonPushed(ActionEvent event) {
-	asd
+
+	System.out.println("cso");
     }
-asd
+ main
+    }
+
 
     @FXML
     void handleButtonPushed(){
