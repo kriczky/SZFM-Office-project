@@ -21,6 +21,7 @@ public class FXMLStudentsSceneController {
     void handleLoadButtonPushed(ActionEvent event) {
 	asd
     }
+asd
 
     @FXML
     void handleButtonPushed(){
