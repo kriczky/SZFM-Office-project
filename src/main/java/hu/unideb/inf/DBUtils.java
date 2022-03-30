@@ -49,7 +49,7 @@ public class DBUtils {
 
 
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/todo_office", "root", "Almafa123");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/todo_office", "root", "abc123");
             psCheckUserExist = connection.prepareStatement("SELECT * FROM users WHERE username = ?");
             psCheckUserExist.setString(1, username);
             resultSet = psCheckUserExist.executeQuery();
@@ -111,7 +111,7 @@ public class DBUtils {
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/todo_office", "root", "Almafa123");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/todo_office", "root", "abc123");
             preparedStatement = connection.prepareStatement("SELECT password FROM users WHERE username = ? ");
             preparedStatement.setString(1, username);
             System.out.println('"' + username + '"');
