@@ -21,7 +21,7 @@ public class DBUtils {
             try {
                 FXMLLoader loader = new FXMLLoader(DBUtils.class.getResource(fxmlFile));
                 root = loader.load();
-                LoggedIn loggdInController = loader.getController();
+                LoggedInController loggdInController = loader.getController();
                 loggdInController.setUserInformation(username);
 
             } catch (IOException e) {

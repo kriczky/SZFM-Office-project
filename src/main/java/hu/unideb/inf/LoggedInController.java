@@ -11,7 +11,7 @@ import javafx.scene.control.Label;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class LoggedIn implements Initializable {
+public class LoggedInController implements Initializable {
 
     @FXML
     private Button button_logout;
