@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.Controller">
+    <children>
+        <HBox prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FFC145;">
+                    <children>
+                        <Label layoutX="28.0" layoutY="326.0" prefHeight="59.0" prefWidth="142.0" text=" how TO DO IT" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@list-icon-1429.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="20.0" layoutY="189.0" prefHeight="78.0" prefWidth="159.0" text="ToDOOfficial" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="288.0" prefHeight="51.0" prefWidth="159.0" text="You know exactly" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="400.0" prefWidth="402.0" style="-fx-background-color: B8B8D1;">
+                    <children>
+                        <Label layoutX="23.0" layoutY="88.0" prefHeight="38.0" prefWidth="150.0" text="Felhasználó név:" textFill="#5b5f97">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="149.0" prefHeight="32.0" prefWidth="142.0" text="Jelszó:" textFill="#5b5f97">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="tf_username" layoutX="196.0" layoutY="91.0" prefHeight="32.0" prefWidth="182.0" />
+                        <TextField fx:id="tf_password" layoutX="196.0" layoutY="152.0" prefHeight="26.0" prefWidth="182.0" />
+                        <Button fx:id="button_login" layoutX="106.0" layoutY="241.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="166.0" style="-fx-background-color: FF6B6C;" text="Bejelentkezés" textFill="#fffbfb">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button fx:id="button_sing_up" layoutX="136.0" layoutY="315.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="106.0" style="-fx-background-color: transparent; -fx-underline: true;" text="Regisztráció" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
