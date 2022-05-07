@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B8B8D1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.LoggdInController">
+   <children>
+      <Label fx:id="lable_welcome" layoutX="158.0" prefHeight="94.0" prefWidth="284.0" text="Üdvözöljük!" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_logout" layoutX="431.0" layoutY="339.0" mnemonicParsing="false" style="-fx-background-color: FF6B6C;" text="Kijelentkezés" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="addTask" layoutX="38.0" layoutY="342.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: FF6B6C;" text="Feladat Hozzáadása" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button layoutX="476.0" layoutY="87.0" mnemonicParsing="false" onAction="#textfieldFrissit" prefHeight="40.0" prefWidth="94.0" style="-fx-background-color: FFC145;" text="Frissítés">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <TableView fx:id="table" layoutX="14.0" layoutY="87.0" prefHeight="225.0" prefWidth="440.0" style="-fx-background-color: light;">
+        <columns>
+          <TableColumn fx:id="Feladat" prefWidth="120.0" text="Feladat" />
+          <TableColumn fx:id="Emberek" prefWidth="180.0" text="Emberek" />
+            <TableColumn fx:id="Cegek" prefWidth="139.20001220703125" text="Cégek" />
+        </columns>
+      </TableView>
+      <Button fx:id="torles" layoutX="476.0" layoutY="226.0" mnemonicParsing="false" onAction="#delete" prefHeight="40.0" prefWidth="94.0" style="-fx-background-color: FF6B6C;" text="Törlés" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="modositas" layoutX="476.0" layoutY="167.0" mnemonicParsing="false" onAction="#modify" prefHeight="40.0" prefWidth="94.0" style="-fx-background-color: FF6B6C;" text="Módosítás" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
