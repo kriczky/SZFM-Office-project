@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B8B8D1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.AddTasks">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B8B8D1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.hu.AddTasks">
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="190.0" style="-fx-background-color: FFC145;" />
       <ListView fx:id="listView" layoutX="31.0" layoutY="55.0" opacity="0.71" prefHeight="266.0" prefWidth="136.0" style="-fx-border-color: FFC145;" />

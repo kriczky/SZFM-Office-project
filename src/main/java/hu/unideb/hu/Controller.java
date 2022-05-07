@@ -1,4 +1,4 @@
-package org.example;
+package hu.unideb.hu;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;

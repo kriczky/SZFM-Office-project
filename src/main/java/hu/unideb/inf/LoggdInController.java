@@ -1,4 +1,4 @@
-package org.example;
+package hu.unideb.inf;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

@@ -1,4 +1,4 @@
-package org.example;
+package hu.unideb.hu;
 
 
 public class Main {

@@ -1,4 +1,4 @@
-package org.example;
+package hu.unideb.inf;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -12,8 +12,6 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
 
 public class DBUtils {
 
@@ -84,7 +82,7 @@ public class DBUtils {
 
         try {
 
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/todo_office", "root", org.example.MainApp.Password);
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/todo_office", "root", MainApp.Password);
             psCheckUserExist = connection.prepareStatement("SELECT * FROM users WHERE username = ?");
             psCheckUserExist.setString(1, username);
             resultSet = psCheckUserExist.executeQuery();
@@ -161,7 +159,7 @@ public class DBUtils {
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/todo_office", "root", org.example.MainApp.Password);
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/todo_office", "root", MainApp.Password);
             preparedStatement = connection.prepareStatement("SELECT password FROM users WHERE username = ? ");
             preparedStatement.setString(1, username);
             resultSet = preparedStatement.executeQuery();
@@ -224,7 +222,7 @@ public class DBUtils {
         resultSet = null;
         try {
 
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/todo_office", "root", org.example.MainApp.Password);
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/todo_office", "root", MainApp.Password);
             preparedStatement = connection.prepareStatement("select id,username,company_id from users");
             resultSet = preparedStatement.executeQuery();
 

@@ -1,4 +1,4 @@
-package org.example;
+package hu.unideb.hu;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
