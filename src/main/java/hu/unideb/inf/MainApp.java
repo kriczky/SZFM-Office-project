@@ -17,7 +17,7 @@ public class MainApp extends Application {
     final static String User = "root";
     final static String Db_Schema = "jdbc:mysql://localhost/";
     final static String DB_Url = "jdbc:mysql://localhost/todo_office";
-    public final static String Password = "Debrecenihallgato20";
+    public final static String Password = "Almafa123";
 
     public static String setPassword(){
         return Password;
