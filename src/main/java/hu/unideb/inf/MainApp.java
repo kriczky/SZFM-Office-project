@@ -1,4 +1,4 @@
-package org.example;
+package hu.unideb.inf;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -17,7 +17,7 @@ public class MainApp extends Application {
     final static String User = "root";
     final static String Db_Schema = "jdbc:mysql://localhost/";
     final static String DB_Url = "jdbc:mysql://localhost/todo_office";
-    public final static String Password = "Almafa123";
+    public final static String Password = "Debrecenihallgato20";
 
     public static String setPassword(){
         return Password;
@@ -120,9 +120,6 @@ public class MainApp extends Application {
 
 
         try {
-            String DB_URL = "jdbc:mysql://localhost/todo_office";
-            String USER = "root";
-            String PASS = "Almafa123";
 
             Connection conn = DriverManager.getConnection(DB_Url, User, Password);
             Statement stmt = conn.createStatement();

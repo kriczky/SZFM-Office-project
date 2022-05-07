@@ -1,4 +1,4 @@
-package org.example;
+package hu.unideb.inf;
 
 public class Person {
     int id;
